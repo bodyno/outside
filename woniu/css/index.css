@@ -161,3 +161,33 @@ body {
   left: 52%;
   top: 68%;
   cursor: pointer; }
+
+.logo {
+  background: url("../img/logo.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 31%;
+  height: 16.7%;
+  left: 14%;
+  top: 26%;
+  opacity: 0;
+  transition: .5s;
+  transform: rotate(-360deg) scale(0.2); }
+  .logo.active {
+    opacity: 1;
+    transform: rotate(0deg) scale(1); }
+
+.logo2 {
+  background: url("../img/logo.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 31%;
+  height: 16.7%;
+  left: 28%;
+  top: 18%;
+  opacity: 0;
+  transition: .5s;
+  transform: rotate(-360deg) scale(0.2); }
+  .logo2.active {
+    opacity: 1;
+    transform: rotate(0deg) scale(1); }
