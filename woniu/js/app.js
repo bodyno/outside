@@ -9,6 +9,9 @@ var mySwiper= new Swiper('.swiper-container',{
     if(swiper.activeIndex==2){
       $(".logo2").addClass("active")
     }
+    if(swiper.activeIndex==3){
+      $(".movie-con").addClass("active")
+    }
   }
 });
 $(".page1--center").addClass("active")
@@ -20,4 +23,9 @@ $(".btn2").click(function(){
 
 $(".share-con-con").click(function(){
   $(this).removeClass("active");
+})
+
+$("#myaudio").click(function(){
+  var myAuto = document.getElementById('myaudio');
+  myAuto.play();
 })

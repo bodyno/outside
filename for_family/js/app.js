@@ -1,9 +1,11 @@
 
 var flag1=false;
+var textIndex=0;
+var timer;
 
 var mySwiper= new Swiper('.swiper-container',{
   resistance:"100%",
-  initialSlide:2,
+  initialSlide:3,
   onTouchStart:function(swiper){
     if(swiper.activeIndex==2){
       if(!flag1){
@@ -18,9 +20,21 @@ var mySwiper= new Swiper('.swiper-container',{
 
     return false;
   },
-
+  onTransitionEnd:function(swiper){
+    if(swiper.activeIndex==2){
+      //文字动画
+      timer=setInterval(function(){
+        var text="工作忙，不回了".slice(0,textIndex)
+        $(".msg-text").text(text)
+        textIndex++;
+        if(textIndex==8){
+          clearInterval(timer)
+        }
+      },500)
+    }
+  }
 });
-mySwiper.lockSwipes()
+//mySwiper.lockSwipes()
 
 var loading=$(".loading");
 var i=0;

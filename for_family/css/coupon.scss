@@ -7,145 +7,22 @@ body{
   background: #bcd9e4;
   max-width: 640px;
 }
-.award{
-  background: url("../img/coupon_list.png") no-repeat;
-  width:75%;
-  height:53%;
-  background-size: 100% 100%;
-  left:11%;
-  top:15%;
-  position: absolute;
-}
-.award_btn{
-  background: url("../img/back.png") no-repeat;
-  width:32%;
-  height:7%;
-  background-size: 100% 100%;
-  left:34%;
-  top:72%;
-  position: absolute;
-}
-.award_logo{
-  background: url("../img/coupon_logo.png") no-repeat;
-  width:21%;
-  height:11%;
-  background-size: 100% 100%;
-  left: 39%;
-  top: 87.1%;
-  position: absolute;
-}
-.coupon-rule{
-  background: url("../img/coupon_rule.png") no-repeat;
-  width:82%;
-  height:75%;
-  background-size: 100% 100%;
-  left: 8%;
-  top: 5%;
-  position: absolute;
-}
-.coupon-rule-con{
-  display: none;
-  &.active{
-    display: block;
-  }
-}
 .coupon-bg{
-  display: none;
-  &.active{
-    display: block;
-  }
-}
-.coupon-rule-btn1{
-  width:20%;
-  height:8.5%;
-  left: 25%;
-  top: 71.4%;
-  cursor: pointer;
-  position: absolute;
-}
-.coupon-rule-btn2{
-  width:20%;
-  height:8.5%;
-  left: 53%;
-  top: 71.4%;
-  cursor: pointer;
-  position: absolute;
-}
-.coupon-item{
-  width:60%;
-  height:12%;
-  left: 19%;
-  top: 26%;
-  cursor: pointer;
-  position: absolute;
-  background: url("../img/c.png") no-repeat;
+  background: url("../img/coupons.jpg") no-repeat;
   background-size: 100% 100%;
-
-  &.active{
-    background: url("../img/c_h_03.png") no-repeat;
-    background-size: 100% 100%;
-  }
-
-  span{
-    font-size: 40px;
-    color: #fff;
-    position: absolute;
-    left: 22%;
-    top: 19.1%;
-  }
-
-  em{
-    font-size: 20px;
-    color: #fff;
-    position: absolute;
-    left: 13%;
-    top: 42.1%;
-    font-style: normal;
-  }
-
-  i{
-    font-size: 26px;
-    color: #fff;
-    position: absolute;
-    left: 56%;
-    top: 32.1%;
-    font-style: normal;
-  }
-}
-.coupon-item2{
-  top: 40%;
-}
-.coupon-item3{
-  top: 54.5%;
-}
-
-.miss{
-  background: url("../img/miss.png") no-repeat;
-  width:67%;
-  height:38%;
-  background-size: 100% 100%;
-  left:14%;
-  top:0.7%;
   position: absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
 }
-.miss2{
-  background: url("../img/miss2.png") no-repeat;
-  width:59.6%;
-  height:3.4%;
+.ok{
+  background: url("../img/ok.png") no-repeat;
   background-size: 100% 100%;
-  left: 19%;
-  top: 41.3%;
   position: absolute;
-}
-
-.miss-con{
-  .coupon-item{
-    top:46.7%;
-  }
-  .coupon-item2{
-    top:60.4%;
-  }
-  .coupon-item3{
-    top: 73.8%;
-  }
+  width:25%;
+  height:5%;
+  left: 37%;
+  top: 78%;
+  cursor: pointer;
 }
