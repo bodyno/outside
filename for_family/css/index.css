@@ -107,18 +107,24 @@ body {
   position: absolute; }
 
 .bg3-active {
-  background: url("../img/bg3_active.jpg") no-repeat;
-  background-size: 100% 100%;
+  overflow: hidden;
   width: 100%;
   height: 100%;
-  right: 100%;
-  top: 0;
   position: absolute;
-  visibility: hidden;
-  transition: .5s linear; }
+  left: 100%;
+  top: 0;
+  transition: .2s; }
   .bg3-active.active {
-    visibility: visible;
-    right: 0; }
+    left: 0; }
+
+.bg3-active-img {
+  background: url("../img/love.png") no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 44%;
+  right: 0;
+  top: 10.3%;
+  position: absolute; }
 
 .bg4 {
   background: url("../img/bg4.jpg") no-repeat;
@@ -274,3 +280,33 @@ body {
   100% {
     -webkit-transform: translateX(5px);
     opacity: 1; } }
+
+.wei-item {
+  background: url("../img/wei.png") no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 11%;
+  position: absolute;
+  left: 0%;
+  top: 29%; }
+
+.wei-item2 {
+  top: 41%; }
+
+.wei-item3 {
+  top: 51%; }
+
+.msg {
+  background: url("../img/msg.png") no-repeat;
+  background-size: 100% 100%;
+  width: 77%;
+  height: 7.9%;
+  position: absolute;
+  left: 3.2%;
+  top: 8.1%; }
+
+.msg-text {
+  position: absolute;
+  left: 14.2%;
+  top: 47.7%;
+  font-size: 16px; }

@@ -1,0 +1,61 @@
+body {
+  max-width: 640px;
+  margin: 0 auto;
+  font-family: "microsoft yahei";
+  -webkit-tap-highlight-color: transparent;
+  background: #f8f8f8; }
+
+* {
+  box-sizing: border-box; }
+
+a img {
+  font-size: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  *zoom: 1; }
+
+.re {
+  position: relative; }
+
+.main {
+  margin: 0 auto; }
+
+.img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin: auto; }
+
+html, body {
+  position: relative;
+  height: 100%; }
+
+body {
+  background: #bcd9e4;
+  max-width: 640px; }
+
+.again {
+  background: url("../img/again.jpg") no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  left: 0;
+  top: 0;
+  position: absolute; }
+
+.again-btn {
+  background: url("../img/again.png") no-repeat;
+  width: 38%;
+  height: 8.1%;
+  background-size: 100% 100%;
+  left: 30%;
+  top: 69%;
+  position: absolute; }

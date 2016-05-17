@@ -1,0 +1,140 @@
+@import "base";
+html, body {
+  position: relative;
+  height: 100%;
+}
+body{
+  background: #bcd9e4;
+  max-width: 640px;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+
+
+.slide-item{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+}
+.page{
+  background: url("../img/p1.jpg") no-repeat center;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+}
+.page2{
+  background-image: url("../img/p2.jpg");
+}
+.page3{
+  background-image: url("../img/p3.jpg");
+}
+.page4{
+  background-image: url("../img/p4.jpg");
+}
+.page5{
+  background-image: url("../img/p5.jpg");
+}
+.arrow{
+  background: url("../img/arrow.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 10.6%;
+  height: 3.5%;
+  left:43%;
+  top:89%;
+  animation:arrow .5s infinite linear;
+}
+@keyframes arrow {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+.page1--center{
+  background: url("../img/center.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 81.7%;
+  height: 37%;
+  left: 10%;
+  top: 26%;
+  opacity:0;
+  transition: .5s;
+  transform: rotate(-360deg) scale(.2);
+
+  &.active{
+    opacity:1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.share-con{
+  background: rgba(0,0,0,.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0%;
+  top: 0%;
+}
+.share{
+  background: url("../img/share.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 57%;
+  height: 20%;
+  right: 3%;
+  top: 3%;
+}
+.share-con-con{
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+.btn1{
+  position: absolute;
+  width: 43%;
+  height: 6.6%;
+  left: 7%;
+  top: 68%;
+  cursor: pointer;
+}
+.btn2{
+  position: absolute;
+  width: 43%;
+  height: 6.6%;
+  left: 52%;
+  top: 68%;
+  cursor: pointer;
+}

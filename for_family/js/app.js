@@ -3,7 +3,7 @@ var flag1=false;
 
 var mySwiper= new Swiper('.swiper-container',{
   resistance:"100%",
-  initialSlide:3,
+  initialSlide:2,
   onTouchStart:function(swiper){
     if(swiper.activeIndex==2){
       if(!flag1){
@@ -30,7 +30,7 @@ var time=setInterval(function(){
   if(i>=100){
     clearInterval(time)
     mySwiper.unlockSwipes()
-    mySwiper.slidePrev()
+    //mySwiper.slidePrev()
   }
 },70)
 
