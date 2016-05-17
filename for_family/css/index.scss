@@ -1,0 +1,251 @@
+@import "base";
+html, body {
+  position: relative;
+  height: 100%;
+}
+body{
+  background: #bcd9e4;
+  max-width: 640px;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+
+
+.slide-item{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+}
+.logo1{
+  background: url("../img/logo1.png") no-repeat;
+  width:30.9%;
+  height:17.6%;
+  background-size: 100% 100%;
+  left:35%;
+  top:32%;
+  position: absolute;
+}
+.loading{
+  font-size: 20px;
+  color:#1e91c9;
+  position: absolute;
+  width:100%;
+  text-align: center;
+  left:0;
+  top:51%;
+}
+.bg2{
+  background: url("../img/bg2.jpg") no-repeat;
+  width:100%;
+  height:100%;
+  background-size: 100% 100%;
+  left:0;
+  top:0;
+  position: absolute;
+}
+.bg3{
+  background: url("../img/bg3.jpg") no-repeat;
+  width:100%;
+  height:100%;
+  background-size: 100% 100%;
+  left:0;
+  top:0;
+  position: absolute;
+}
+.bg3-active{
+  background: url("../img/bg3_active.jpg") no-repeat;
+  background-size: 100% 100%;
+  width:100%;
+  height:100%;
+  right:100%;
+  top:0;
+  position: absolute;
+  visibility: hidden;
+  transition: .5s linear;
+
+  &.active{
+    visibility: visible;
+    right: 0;
+  }
+}
+.bg4{
+  background: url("../img/bg4.jpg") no-repeat;
+  width:100%;
+  height:100%;
+  background-size: 100% 100%;
+  left:0;
+  top:0;
+  position: absolute;
+}
+
+.bg5{
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  position: absolute;
+}
+
+.btn-up{
+  display: block;
+  width: 78%;
+  height: 8.9%;
+  background: url("../img/btn.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:11%;
+  top:59%;
+}
+.btn-coupon{
+  display: block;
+  width: 78%;
+  height: 8.9%;
+  background: url("../img/coupon_btn.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:11%;
+  top:69%;
+}
+.logo2{
+  display: block;
+  width: 30.9%;
+  height: 17.3%;
+  background: url("../img/logo2.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:32%;
+  top:80%;
+}
+.up-con{
+  display: none;
+
+  &.active{
+    display: block;
+  }
+}
+
+.share{
+  display: block;
+  width: 82%;
+  height: 19%;
+  background: url("../img/share.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left:12%;
+  top:70%;
+}
+.bg-share,.coupon{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.8);
+  position: absolute;
+  left:0;
+  top:0;
+  display: none;
+
+  &.active{
+    display: block;
+  }
+}
+.coupon-img{
+  display: block;
+  width: 76%;
+  height: 43%;
+  background: url("../img/coupon.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 13%;
+  top: 19%;
+}
+.coupon-close{
+  display: block;
+  width: 14%;
+  height: 9%;
+  position: absolute;
+  cursor: pointer;
+  left: 64%;
+  top: 21%;
+}
+.bg-share-img{
+  display: block;
+  width: 69.5%;
+  height: 44.2%;
+  background: url("../img/share_top.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 28%;
+  top: 2%;
+}
+.btn-up-con{
+  background: url("../img/cover.png") no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  width: 93%;
+  height: 52%;
+  position: absolute;
+  left: 3.9%;
+  top: 4.1%;
+}
+.btn-up-cover{
+  position: absolute;
+  left:9.6%;
+  top:15.7%;
+  background: url("../img/cover_b_03.png") no-repeat;
+  background-size: 100% 100%;
+  width:81.7%;
+  height:45.7%;
+}
+.btn-up-my{
+  position: absolute;
+  left:9.6%;
+  top:15.7%;
+  width:81.7%;
+  height:45.7%;
+}
+.slide{
+  position: absolute;
+  left: 35.6%;
+  top: 89.7%;
+  background: url("../img/slide.png") no-repeat;
+  background-size: 100% 100%;
+  width:31.9%;
+  height:3.5%;
+}
+.slide-btn{
+  position: absolute;
+  left: 29.6%;
+  top: 90.5%;
+  background: url("../img/slide_right.png") no-repeat;
+  background-size: 100% 100%;
+  width:3.1%;
+  height:1.9%;
+  animation:slide .5s linear infinite;
+}
+@-webkit-keyframes slide{
+  0%{-webkit-transform: translateX(0%);opacity:1}
+  100%{-webkit-transform: translateX(5px);opacity:1}
+}

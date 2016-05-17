@@ -1,0 +1,91 @@
+body{
+  background: #bcd9e4;
+}
+.ward-cover{
+  background: url("../img/ward.png") no-repeat;
+  background-size: 100% 100%;
+  width:75%;
+  height:43%;
+  position: absolute;
+  left: 12%;
+  top: 1%;
+}
+.ward-input{
+  display: block;
+  position: absolute;
+  width:81%;
+  height:5.4%;
+  border:3px solid #1e91c9;
+  border-radius: 5px;
+  font-size: 14px;
+  left: 7%;
+  top: 47%;
+  background: #93dcff;
+  outline: none;
+  padding:0 10px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #1e91c9;
+}
+
+.ward-input2{
+  top: 56%;
+}
+.ward-input3{
+  top: 65%;
+}
+.btn{
+  background: url("../img/ok.png") no-repeat;
+  background-size: 100% 100%;
+  width:25%;
+  height:5.5%;
+  position: absolute;
+  left: 35%;
+  top: 76%;
+  border:none;
+  cursor: pointer;
+  outline: none;
+}
+
+.footer{
+  background: url("../img/footer.png") no-repeat;
+  background-size: 100% 100%;
+  width:89%;
+  height:12%;
+  position: absolute;
+  left: 5%;
+  top: 85%;
+  border:none;
+}
+.ward-item{
+  width:23%;
+  height:21%;
+  position: absolute;
+  left: 38%;
+  top: 20%;
+  border:none;
+}
+.ward1{
+  background: url("../img/ward1.png") no-repeat;
+  background-size: 100% 100%;
+  width:42%;
+  height:22%;
+  position: absolute;
+  left: 27%;
+  top: 20%;
+}
+.ward2{
+  background: url("../img/ward2.png") no-repeat;
+  background-size: 100% 100%;
+  width:35%;
+  height:22%;
+  position: absolute;
+  left: 32%;
+  top: 20%;
+}
+.ward3{
+  background: url("../img/ward3.png") no-repeat;
+  background-size: 100% 100%;
+}
