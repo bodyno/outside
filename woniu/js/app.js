@@ -1,7 +1,7 @@
 var mySwiper= new Swiper('.swiper-container',{
   resistance:"100%",
   direction:"vertical",
-  initialSlide:2,
+  initialSlide:0,
   onTransitionEnd:function(swiper){
     if(swiper.activeIndex==1){
       $(".logo").addClass("active")
@@ -11,7 +11,6 @@ var mySwiper= new Swiper('.swiper-container',{
     }
   }
 });
-
 $(".page1--center").addClass("active")
 
 
