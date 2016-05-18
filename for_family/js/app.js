@@ -7,10 +7,10 @@ var musicIndex=0;
 
 var mySwiper= new Swiper('.swiper-container',{
   resistance:"100%",
-  initialSlide:3,
+  initialSlide:2,
   onTransitionEnd:function(swiper){
 
-    if(swiper.activeIndex==2){
+    if(swiper.activeIndex==1){
 
       swiper.lockSwipes()
 
@@ -26,10 +26,10 @@ var mySwiper= new Swiper('.swiper-container',{
 
       setTimeout(function(){
         $(".bg3-active").addClass("active");
-        mySwiper.unlockSwipes()
       },6000)
 
       setTimeout(function(){
+        mySwiper.unlockSwipes()
         mySwiper.slidePrev()
       },8000)
     }
