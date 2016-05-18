@@ -2,10 +2,12 @@
 var flag1=false;
 var textIndex=0;
 var timer;
+var timerMusic;
+var musicIndex=0;
 
 var mySwiper= new Swiper('.swiper-container',{
   resistance:"100%",
-  initialSlide:3,
+  initialSlide:4,
   onTouchStart:function(swiper){
     if(swiper.activeIndex==2){
       if(!flag1){
@@ -21,20 +23,26 @@ var mySwiper= new Swiper('.swiper-container',{
     return false;
   },
   onTransitionEnd:function(swiper){
+
+    if(swiper.activeIndex==3){
+      $(".wei-con").addClass("active")
+      play();
+      timerMusic=setInterval(function(){
+        play();
+      },500)
+
+    }
+
     if(swiper.activeIndex==2){
       //文字动画
+      text();
       timer=setInterval(function(){
-        var text="工作忙，不回了".slice(0,textIndex)
-        $(".msg-text").text(text)
-        textIndex++;
-        if(textIndex==8){
-          clearInterval(timer)
-        }
+        text();
       },500)
     }
   }
 });
-//mySwiper.lockSwipes()
+mySwiper.lockSwipes()
 
 var loading=$(".loading");
 var i=0;
@@ -90,3 +98,20 @@ $(".coupon-close").click(function(){
 })
 
 
+function play(){
+  var music=$("#sound"+musicIndex)[0];
+  music.play();
+  musicIndex++;
+  if(musicIndex==3){
+    clearInterval(timerMusic);
+  }
+}
+
+function text(){
+  var text="工作忙，不回了".slice(0,textIndex)
+  $(".msg-text").text(text)
+  textIndex++;
+  if(textIndex==8){
+    clearInterval(timer)
+  }
+}
