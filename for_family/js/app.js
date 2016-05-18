@@ -44,15 +44,13 @@ var mySwiper= new Swiper('.swiper-container',{
 });
 mySwiper.lockSwipes()
 
-var loading=$(".loading");
 var i=0;
 var time=setInterval(function(){
   i++;
-  loading.text(i+"%")
   if(i>=100){
     clearInterval(time)
     mySwiper.unlockSwipes()
-    //mySwiper.slidePrev()
+    mySwiper.slidePrev()
   }
 },70)
 

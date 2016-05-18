@@ -39,13 +39,21 @@ body{
   top: 0;
   margin: 0 auto;
 }
+.bg1{
+  background: #fff;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  position: absolute;
+}
 .logo1{
-  background: url("../img/logo1.png") no-repeat;
-  width:30.9%;
-  height:17.6%;
+  background: url("../img/loading.png") no-repeat;
+  width:13.5%;
+  height:8.9%;
   background-size: 100% 100%;
-  left:35%;
-  top:32%;
+  left:43%;
+  top:41%;
   position: absolute;
 }
 .loading{
