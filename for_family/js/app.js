@@ -55,7 +55,7 @@ var time=setInterval(function(){
     $("#bg2").addClass("active");
     begin()
   }
-},1)
+},70)
 
 function begin(){
   $(".wei-con").addClass("active")
