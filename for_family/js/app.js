@@ -12,27 +12,33 @@ var mySwiper= new Swiper('.swiper-container',{
 
     if(swiper.activeIndex==1){
 
-      swiper.lockSwipes()
+      if(!flag1){
+        flag1=true;
 
-      $(".msg").addClass("active")
+        swiper.lockSwipes()
 
-      //文字动画
-      setTimeout(function(){
-        text();
-        timer=setInterval(function(){
+        $(".msg").addClass("active")
+
+        //文字动画
+        setTimeout(function(){
           text();
-        },500)
-      },700)
+          timer=setInterval(function(){
+            text();
+          },500)
+        },700)
 
-      setTimeout(function(){
-        $(".bg3-active").addClass("active");
-      },6000)
+        setTimeout(function(){
+          $(".bg3-active").addClass("active");
+        },6000)
 
-      setTimeout(function(){
-        mySwiper.unlockSwipes()
-        mySwiper.slidePrev()
-      },8000)
+        setTimeout(function(){
+          mySwiper.unlockSwipes()
+          mySwiper.slidePrev()
+        },8000)
+      }
+
     }
+
   }
 });
 mySwiper.lockSwipes()
@@ -45,12 +51,11 @@ var time=setInterval(function(){
   if(i>=100){
     clearInterval(time)
     mySwiper.unlockSwipes()
-    $(".load-con").addClass("active")
-    $(".bg1").hide()
-
+    $("#bg1").hide()
+    $("#bg2").addClass("active");
     begin()
   }
-},70)
+},1)
 
 function begin(){
   $(".wei-con").addClass("active")

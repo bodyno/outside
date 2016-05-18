@@ -103,7 +103,10 @@ body {
   background-size: 100% 100%;
   left: 0;
   top: 0;
-  position: absolute; }
+  position: absolute;
+  visibility: hidden; }
+  .bg2.active {
+    visibility: visible; }
 
 .bg3 {
   background: url("../img/bg3.jpg") no-repeat;
@@ -313,9 +316,6 @@ body {
   opacity: 0;
   transition: .5s; }
 
-.wei-con.active .wei-item {
-  opacity: 1; }
-
 .wei-con .wei-item {
   background: url("../img/wei.png") no-repeat;
   background-size: 100% 100%;
@@ -332,6 +332,9 @@ body {
 .wei-con .wei-item3 {
   top: 52%;
   transition: .5s 4s; }
+
+.wei-con.active .wei-item {
+  opacity: 1; }
 
 .load-con {
   display: none; }
