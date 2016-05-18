@@ -7,55 +7,66 @@ var musicIndex=0;
 
 var mySwiper= new Swiper('.swiper-container',{
   resistance:"100%",
-  initialSlide:4,
-  onTouchStart:function(swiper){
-    if(swiper.activeIndex==2){
-      if(!flag1){
-        swiper.lockSwipes()
-        $(".bg3-active").addClass("active");
-        flag1=true;
-        setTimeout(function(){
-          mySwiper.unlockSwipes()
-        },200)
-      }
-    }
-
-    return false;
-  },
+  initialSlide:3,
   onTransitionEnd:function(swiper){
 
-    if(swiper.activeIndex==3){
-      $(".wei-con").addClass("active")
-      play();
-      timerMusic=setInterval(function(){
-        play();
-      },500)
-
-    }
-
     if(swiper.activeIndex==2){
+
+      swiper.lockSwipes()
+
+      $(".msg").addClass("active")
+
       //文字动画
-      text();
-      timer=setInterval(function(){
+      setTimeout(function(){
         text();
-      },500)
+        timer=setInterval(function(){
+          text();
+        },500)
+      },700)
+
+      setTimeout(function(){
+        $(".bg3-active").addClass("active");
+        mySwiper.unlockSwipes()
+      },6000)
+
+      setTimeout(function(){
+        mySwiper.slidePrev()
+      },8000)
     }
   }
 });
 mySwiper.lockSwipes()
 
+var loading=$(".loading-text");
 var i=0;
 var time=setInterval(function(){
   i++;
+  loading.text(i+"%")
   if(i>=100){
     clearInterval(time)
     mySwiper.unlockSwipes()
-    mySwiper.slidePrev()
+    $(".load-con").addClass("active")
+    $(".bg1").hide()
+
+    begin()
   }
 },70)
 
+function begin(){
+  $(".wei-con").addClass("active")
+  play();
+  timerMusic=setInterval(function(){
+    play();
+  },2000)
+}
+
 
 //确认上传
+
+$(".up").click(function(){
+  $(".up-step").eq(1).addClass("active").siblings().removeClass("active");
+})
+
 $(".btn-up").click(function () {
   if($('#form').find("input").val()){
 
@@ -76,6 +87,7 @@ $(".btn-up").click(function () {
   }
 
 })
+
 
 $(".share").click(function(){
   $(".bg-share").addClass("active");
@@ -113,3 +125,4 @@ function text(){
     clearInterval(timer)
   }
 }
+
