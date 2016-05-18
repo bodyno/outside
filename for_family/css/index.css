@@ -228,12 +228,12 @@ body {
 
 .bg-share-img {
   display: block;
-  width: 76%;
-  height: 44.2%;
+  width: 91.7%;
+  height: 63.4%;
   background: url("../img/share_top.png") no-repeat;
   background-size: 100% 100%;
   position: absolute;
-  left: 22%;
+  left: 7%;
   top: 2%; }
 
 .btn-up-con {
