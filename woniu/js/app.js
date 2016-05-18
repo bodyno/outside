@@ -29,3 +29,15 @@ $("#myaudio").click(function(){
   var myAuto = document.getElementById('myaudio');
   myAuto.play();
 })
+
+$(".music").click(function(){
+
+  if($(this).hasClass("active")){
+    var myAuto = document.getElementById('myaudio');
+    myAuto.play();
+  }else{
+    var myAuto = document.getElementById('myaudio');
+    myAuto.pause();
+  }
+  $(this).toggleClass("active");
+})

@@ -69,6 +69,18 @@ body{
   left:43%;
   top:89%;
   animation:arrow .5s infinite linear;
+  -webkit-animation:arrow .5s infinite linear;
+}
+@-webkit-keyframes arrow {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
 @keyframes arrow {
   0%{
@@ -91,11 +103,14 @@ body{
   top: 26%;
   opacity:0;
   transition: .5s;
+  -webkit-transition: .5s;
   transform: rotate(-360deg) scale(.2);
+  -webkit-transform: rotate(-360deg) scale(.2);
 
   &.active{
     opacity:1;
     transform: rotate(0deg) scale(1);
+    -webkit-transform: rotate(0deg) scale(1);
   }
 }
 
@@ -106,6 +121,7 @@ body{
   height: 100%;
   right: 0%;
   top: 0%;
+  z-index: 111;
 }
 .share{
   background: url("../img/share.png") no-repeat;
@@ -115,6 +131,7 @@ body{
   height: 20%;
   right: 3%;
   top: 3%;
+  z-index: 111;
 }
 .share-con-con{
   display: none;
@@ -165,7 +182,9 @@ body{
   top: 18%;
   opacity:0;
   transition: .5s;
+  -webkit-transition: .5s;
   transform: rotate(-360deg) scale(.2);
+  -webkit-transform: rotate(-360deg) scale(.2);
 
   &.active{
     opacity:1;
@@ -182,6 +201,7 @@ body{
 .movie-con.active{
   .movie{
     transform: translate(0,0);
+    -webkit-transform: translate(0,0);
     opacity:1;
   }
 }
@@ -196,39 +216,64 @@ body{
   transition: .5s;
   opacity:0;
   transform: translate(-100px,-100px);
+  -webkit-transform: translate(-100px,-100px);
 }
 .movie2{
   background-image: url("../img/movie2.png");
   left: 38.5%;
   top: 29.9%;
   transition: .5s .2s;
+  -webkit-transition: .5s .2s;
   transform: translate(100px,-100px);
+  -webkit-transform: translate(100px,-100px);
 }
 .movie3{
   background-image: url("../img/movie3.png");
   left: 67.5%;
   top: 29.9%;
   transition: .5s .4s;
+  -webkit-transition: .5s .4s;
   transform: translate(100px,100px);
+  -webkit-transform: translate(100px,100px);
 }
 .movie4{
   background-image: url("../img/movie4.png");
   left: 10.5%;
   top: 55.9%;
   transition: .5s .6s;
+  -webkit-transition: .5s .6s;
   transform: translate(50px,75px);
+  -webkit-transform: translate(50px,75px);
 }
 .movie5{
   background-image: url("../img/movie5.png");
   left: 38.5%;
   top: 55.9%;
   transition: .5s .8s;
+  -webkit-transition: .5s .8s;
   transform: translate(50px,-75px);
+  -webkit-transform: translate(50px,-75px);
 }
 .movie6{
   background-image: url("../img/movie6.png");
   left: 67.5%;
   top: 55.9%;
   transition: .5s 1s;
+  -webkit-transition: .5s 1s;
   transform: translate(-50px,75px);
+  -webkit-transform: translate(-50px,75px);
+}
+.music{
+  background: url("../img/music.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 6.9%;
+  height: 4.2%;
+  right: 10.5%;
+  top: 6.2%;
+  z-index:11;
+
+  &.active{
+    background-image: url("../img/music_c.png");
+  }
 }
