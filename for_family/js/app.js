@@ -21,6 +21,9 @@ var mySwiper= new Swiper('.swiper-container',{
 
         //文字动画
         setTimeout(function(){
+
+          $("#sound3")[0].play();
+
           text();
           timer=setInterval(function(){
             text();
