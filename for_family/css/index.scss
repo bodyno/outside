@@ -262,7 +262,7 @@ body{
   background-size: 100% 100%;
   width:3.1%;
   height:1.9%;
-  animation:slide .5s linear infinite;
+  -webkit-animation:slide .5s linear infinite;
 }
 @-webkit-keyframes slide{
   0%{-webkit-transform: translateX(0%);opacity:1}
@@ -361,4 +361,19 @@ body{
   &.active{
     display: block;
   }
+}
+.point{
+  background: url("../img/point.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width:8.1%;
+  height:4.8%;
+  left: 46%;
+  top: 34%;
+  -webkit-animation:point .8s linear infinite;
+}
+@-webkit-keyframes point{
+  0%{-webkit-transform: translateY(0) scale(1);}
+  50%{-webkit-transform: translateY(10px) scale(.9);}
+  100%{-webkit-transform: translateY(0px) scale(1);}
 }
