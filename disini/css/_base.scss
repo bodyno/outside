@@ -1,0 +1,31 @@
+body{
+  margin: 0 auto;
+  font-family: "microsoft yahei";
+}
+*{
+  box-sizing: border-box;
+}
+a img{
+  font-size: 0;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix{*zoom:1;}
+.re{
+  position: relative;
+}
+.main{
+  margin: 0 auto;
+}
+.img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+}
